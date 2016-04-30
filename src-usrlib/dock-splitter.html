@@ -1,6 +1,5 @@
 <template>
-  <!-- <h1>Dock Manager</h1> -->
-  <div ref="dockManagerElement" class="dock-manager">
+  <div class="dock-splitter">
     <div repeat.for="panel of panels">
       <compose view-model.bind="'aurelia-dock/' + panel.view" model.bind="panel">
       </compose>

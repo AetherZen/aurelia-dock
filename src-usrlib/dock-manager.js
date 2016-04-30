@@ -6,8 +6,7 @@ export class DockManager {
   created(owningView, thisView) {
     this.view = thisView;
     this.parentView = owningView;
-    console.log('DockManager created');
-    console.log(thisView);
+    this.view.viewModel = this;
   }
 
   activate(model) {
@@ -19,7 +18,7 @@ export class DockManager {
   }
 
   attached() {
-    // At this point, this.dockManagerElement is valid
+    // At this point, ref is valid
   }
 
 }
