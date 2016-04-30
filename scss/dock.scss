@@ -1,0 +1,32 @@
+
+.dock-manager {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 1px;
+  bottom: 0px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: green;
+}
+
+.dock-left {
+  position: absolute;
+  margin: 0px;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+  border-style: groove;
+  border-width: thin;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.dock-splitter {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  width: 10px;
+  background-color: blue;
+
+}

@@ -1,0 +1,40 @@
+{
+  "name": "aurelia-dock",
+  "version": "0.0.1",
+  "description": "Aurelia Docking Views",
+  "main": "dist-usrlib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AetherZen/aurelia-dock.git"
+  },
+  "author": "Raymond A. Richards",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AetherZen/aurelia-dock/issues"
+  },
+  "homepage": "https://github.com/AetherZen/aurelia-dock#readme",
+  "devDependencies": {
+    "babel": "^5.8.23",
+    "babel-plugin-proxy": "^1.0.6",
+    "del": "^1.1.0",
+    "gulp": "^3.8.10",
+    "gulp-babel": "^5.1.0",
+    "gulp-changed": "^1.1.0",
+    "gulp-gzip": "^1.2.0",
+    "gulp-nodemon": "^2.0.6",
+    "gulp-plumber": "^0.6.6",
+    "gulp-sass": "^2.3.0",
+    "gulp-sourcemaps": "^1.3.0",
+    "gulp-tar": "^1.9.0",
+    "jspm": "^0.16.11",
+    "nodemon": "^1.9.1",
+    "object.assign": "^1.0.3",
+    "run-sequence": "^1.0.2",
+    "system-npm": "^0.3.2",
+    "vinyl-paths": "^1.0.0"
+  }
+
+}
