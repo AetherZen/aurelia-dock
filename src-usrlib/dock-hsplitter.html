@@ -1,0 +1,18 @@
+<template>
+  <div class="dock-hsplit-container" mousemove.delegate="splitMove($event)">
+    <div class="dock-hsplit-left" css.bind="leftStyle">
+      <compose view-model.bind="model.left.view" model.bind="model.left">
+      </compose>
+    </div>
+    <div class="dock-hsplit-handle" stye="width: ${right}px;"
+      draggable="false"
+      mousedown.delegate="splitClick(true, $event)"
+      mouseup.delegate="splitClick(false, $event)"
+      mousemove.delegate="splitMove($event)"
+    ></div>
+    <div class="dock-hsplit-right" css.bind="rightStyle">
+      <compose view-model.bind="model.right.view" model.bind="model.right">
+      </compose>
+    </div>
+  </div>
+</template>

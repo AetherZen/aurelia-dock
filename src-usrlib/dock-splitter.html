@@ -1,7 +1,8 @@
 <template>
   <div class="dock-splitter">
+    <p>${id}</p>
     <div repeat.for="panel of panels">
-      <compose view-model.bind="'aurelia-dock/' + panel.view" model.bind="panel">
+      <compose view-model.bind="panel.view" model.bind="panel">
       </compose>
     </div>
   </div>

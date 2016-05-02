@@ -21,10 +21,24 @@ export class DockSplitter {
     return this.model.panels;
   }
 
+  get id() {
+    return this.model.id;
+  }
+
   attached() {
-    console.log("Attached to splitter");
-    console.log(this.element);
-    console.log(this.parentView.viewModel);
+    console.log(this.element.firstElementChild);
+
+    for(let style in this.model.style) {
+      let value = this.model.style[style];
+      console.log(style);
+      console.log(value);
+      switch(style) {
+        case 'width':
+          console.log(`Changing width to ${value}`);
+          this.element.firstElementChild.style.width = value;
+          break;
+      }
+    }
   }
 
   detached() {

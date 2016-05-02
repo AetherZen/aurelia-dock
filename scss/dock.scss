@@ -10,23 +10,38 @@
   background-color: green;
 }
 
-.dock-left {
-  position: absolute;
-  margin: 0px;
-  left: 0px;
-  top: 0px;
-  bottom: 0px;
-  border-style: groove;
-  border-width: thin;
-  overflow-x: hidden;
-  overflow-y: auto;
+.dock-hsplit-left {
+  float: left;
+  height: 100%;
+  vertical-align: top;
+  overflow: hidden;
+  background-color: #7FFFFF;
 }
 
-.dock-splitter {
-  position: absolute;
-  top: 0px;
-  bottom: 0px;
-  width: 10px;
-  background-color: blue;
+.dock-hsplit-right {
+  height: 100%;
+  vertical-align: top;
+  overflow: hidden;
+  background-color: #FF7FFF;
+}
 
+.dock-hsplit-handle {
+  float: left;
+  vertical-align: top;
+  height: 100%;
+  width: 8px;
+  background-color: blanchedalmond;
+}
+
+.dock-hsplit-container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: blue;
+  overflow: hidden;
+}
+
+.dock-container {
+  width: 100%;
+  height: 100%;
 }
