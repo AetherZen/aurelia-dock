@@ -60,22 +60,22 @@ export class DockHorizontalSplitter {
    * Split handlers
    *
    */
-   splitClick(split, event) {
-     if(split) {
+   splitClick(isDragging, event) {
+     if(isDragging) {
        // Save the current split position and the position where the mouse
        // was clicked (in client coordinates);
-       this.split = this.model.split;
+       this.originalSplit = this.model.split;
        this.startX = event.clientX;
      }
 
-     this.draggingSplitter = split;
+     this.isDragging = isDragging;
    }
 
    splitMove(event) {
-     if(this.draggingSplitter) {
-       // Update the model split based on the original click position and
-       // the new position.
-       this.model.split = this.split + event.clientX - this.startX;
+     if(this.isDragging) {
+       // Update the model split based on the original split, the original
+       // click position and the new mouse position.
+       this.model.split = this.originalSplit + event.clientX - this.startX;
      }
    }
 }
