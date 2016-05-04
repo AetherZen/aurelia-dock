@@ -1,0 +1,18 @@
+<template>
+  <div class="dock-vsplit-container" mousemove.delegate="splitMove($event)">
+    <div class="dock-vsplit-top" css.bind="topStyle">
+      <compose view-model.bind="model.top.view" model.bind="model.top">
+      </compose>
+    </div>
+    <div class="dock-vsplit-handle"
+      draggable="false"
+      mousedown.delegate="splitClick(true, $event)"
+      mouseup.delegate="splitClick(false, $event)"
+      mousemove.delegate="splitMove($event)"
+    ></div>
+    <div class="dock-vsplit-bottom" css.bind="bottomStyle">
+      <compose view-model.bind="model.bottom.view" model.bind="model.bottom">
+      </compose>
+    </div>
+  </div>
+</template>

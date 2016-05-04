@@ -34,7 +34,6 @@
 }
 
 .dock-hsplit-container {
-  position: absolute;
   height: 100%;
   width: 100%;
   background-color: blue;
@@ -44,4 +43,32 @@
 .dock-container {
   width: 100%;
   height: 100%;
+}
+
+
+.dock-vsplit-top {
+  width: 100%;
+  overflow: hidden;
+  background-color: #FF7F7F;
+}
+
+.dock-vsplit-bottom {
+  height: 100%;
+  vertical-align: top;
+  overflow: hidden;
+  background-color: #FF7F00;
+}
+
+.dock-vsplit-handle {
+  vertical-align: top;
+  width: 100%;
+  height: 8px;
+  background-color: blanchedalmond;
+}
+
+.dock-vsplit-container {
+  height: 100%;
+  width: 100%;
+  background-color: blue;
+  overflow: hidden;
 }

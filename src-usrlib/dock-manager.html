@@ -1,7 +1,10 @@
 <template>
   <!-- <h1>Dock Manager</h1> -->
-  <div ref="dockManagerElement" class="dock-manager">
-    <div repeat.for="panel of panels">
+  <div ref="dockManagerElement" class="dock-manager"
+    mousemove.delegate="mouseMove($event)"
+    mouseout.delegate="mouseOut($event)"
+  >
+    <div repeat.for="panel of panels" class="dock-container">
       <compose view-model.bind="panel.view" model.bind="panel">
       </compose>
     </div>
